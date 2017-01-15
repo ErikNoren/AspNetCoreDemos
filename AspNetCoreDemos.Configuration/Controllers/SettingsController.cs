@@ -19,6 +19,7 @@ namespace AspNetCoreDemos.Configuration.Controllers
         //}
 
         //IOptionsSnapshot<> will reflect updated values that change while the application is running
+        //Requires .NET Core 1.1
         public SettingsController(IOptionsSnapshot<MySettings> applicationSettings)
         {
             appSettings = applicationSettings.Value;
