@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "exports": {
+    "AspNetCoreDemos.ProjectReferencing.NetFx.Data/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6",
+      "compile": {
+        "bin/Debug/AspNetCoreDemos.ProjectReferencing.NetFx.Data.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/AspNetCoreDemos.ProjectReferencing.NetFx.Data.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/AspNetCoreDemos.ProjectReferencing.NetFx.Data.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}
