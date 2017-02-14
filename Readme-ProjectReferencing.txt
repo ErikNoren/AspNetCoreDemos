@@ -14,3 +14,8 @@ In the NetFx solution, the .Data project is a common Class Library project.
 In the NetCore solution, the .Data project is a Class Library (Portable) project targeting to .NET Standard.
 
 Aside from the .Data project types, the solutions are practically identical.
+
+Key takeaway: Platform code is nearly the same between .NET Framework and .NET Core for common situations.
+While the tooling could use some improvement especially around creating libraries that can be cross-compiled
+for both .NET Framework and .NET Core the overall effort in developing for .NET Core isn't much different
+from .NET Framework and comes with the benefit of being able to be run in different environments without changes.

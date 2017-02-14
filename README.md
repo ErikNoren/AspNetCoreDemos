@@ -10,3 +10,5 @@ As new versions are released I may update these samples but only if the updates 
 
 When looking through these samples if you encounter anything unfamiliar check out the [official docs](https://docs.microsoft.com/en-us/aspnet/core/).
 They are incredible and continue to [improve with contributions](https://github.com/aspnet/Docs).
+
+To understand the demos, each solution folder has a Readme- file explaining what you should see.

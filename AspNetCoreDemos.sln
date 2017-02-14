@@ -4,8 +4,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{52DA4213-D8AF-491C-BA07-7C84C420D1A8}"
+	ProjectSection(SolutionItems) = preProject
+		Readme-Configuration.txt = Readme-Configuration.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{04F453EE-25D7-47A5-AE86-EDF8A947A809}"
+	ProjectSection(SolutionItems) = preProject
+		Readme-Logging.txt = Readme-Logging.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFrameworkCore", "EntityFrameworkCore", "{9B8F5C01-863C-4E8F-908F-1321F69767EE}"
 EndProject
