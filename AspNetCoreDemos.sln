@@ -3,33 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.BasicLogging", "AspNetCoreDemos.BasicLogging\AspNetCoreDemos.BasicLogging.csproj", "{28497C27-0DAD-4F00-B344-8DC636D4A598}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.BasicLogging", "Logging\AspNetCoreDemos.BasicLogging\AspNetCoreDemos.BasicLogging.csproj", "{28497C27-0DAD-4F00-B344-8DC636D4A598}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.Configuration", "AspNetCoreDemos.Configuration\AspNetCoreDemos.Configuration.csproj", "{9D69E94B-3E66-4AF6-B1FA-F09AE3E9E29B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.Configuration", "Configuration\AspNetCoreDemos.Configuration\AspNetCoreDemos.Configuration.csproj", "{9D69E94B-3E66-4AF6-B1FA-F09AE3E9E29B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDemos.ProjectReferencing.NetCore.Data", "AspNetCoreDemos.ProjectReferencing.NetCore.Data\AspNetCoreDemos.ProjectReferencing.NetCore.Data.csproj", "{D10217FE-4A52-4581-8AB1-83E877C836A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDemos.ProjectReferencing.NetCore.Data", "ProjectReferencing\AspNetCoreDemos.ProjectReferencing.NetCore.Data\AspNetCoreDemos.ProjectReferencing.NetCore.Data.csproj", "{D10217FE-4A52-4581-8AB1-83E877C836A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.ProjectReferencing.NetCore.Web", "AspNetCoreDemos.ProjectReferencing.NetCore.Web\AspNetCoreDemos.ProjectReferencing.NetCore.Web.csproj", "{988CFE77-9239-4584-89E9-D5EDB7DE2866}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.ProjectReferencing.NetCore.Web", "ProjectReferencing\AspNetCoreDemos.ProjectReferencing.NetCore.Web\AspNetCoreDemos.ProjectReferencing.NetCore.Web.csproj", "{988CFE77-9239-4584-89E9-D5EDB7DE2866}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDemos.ProjectReferencing.NetFx.Data", "AspNetCoreDemos.ProjectReferencing.NetFx.Data\AspNetCoreDemos.ProjectReferencing.NetFx.Data.csproj", "{FF42228E-2FCA-4AB3-A758-E619064E2CA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDemos.ProjectReferencing.NetFx.Data", "ProjectReferencing\AspNetCoreDemos.ProjectReferencing.NetFx.Data\AspNetCoreDemos.ProjectReferencing.NetFx.Data.csproj", "{FF42228E-2FCA-4AB3-A758-E619064E2CA0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.ProjectReferencing.NetFx.Web", "AspNetCoreDemos.ProjectReferencing.NetFx.Web\AspNetCoreDemos.ProjectReferencing.NetFx.Web.csproj", "{6B6846E1-625D-4E8D-8103-AB8F1EBC1A18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.ProjectReferencing.NetFx.Web", "ProjectReferencing\AspNetCoreDemos.ProjectReferencing.NetFx.Web\AspNetCoreDemos.ProjectReferencing.NetFx.Web.csproj", "{6B6846E1-625D-4E8D-8103-AB8F1EBC1A18}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.Serilog", "AspNetCoreDemos.Serilog\AspNetCoreDemos.Serilog.csproj", "{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.Serilog", "Logging\AspNetCoreDemos.Serilog\AspNetCoreDemos.Serilog.csproj", "{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{DCA01947-A176-4B02-B183-37618278BF30}"
 	ProjectSection(SolutionItems) = preProject
-		Readme-Configuration.txt = Readme-Configuration.txt
+		Configuration\Readme-Configuration.txt = Configuration\Readme-Configuration.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{4F5E7A96-685C-4675-9436-A8CE0BA4530B}"
 	ProjectSection(SolutionItems) = preProject
-		Readme-Logging.txt = Readme-Logging.txt
+		Logging\Readme-Logging.txt = Logging\Readme-Logging.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectReferencing", "ProjectReferencing", "{BD66D6D3-2900-4BB4-87E4-A05D81B33CAD}"
 	ProjectSection(SolutionItems) = preProject
-		Readme-ProjectReferencing.txt = Readme-ProjectReferencing.txt
+		ProjectReferencing\Readme-ProjectReferencing.txt = ProjectReferencing\Readme-ProjectReferencing.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFrameworkCore", "EntityFrameworkCore", "{1046A331-9E45-477B-BD6C-D4C3259ED3CA}"
@@ -40,6 +40,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDemos.Middleware", "Middleware\AspNetCoreDemos.Middleware\AspNetCoreDemos.Middleware.csproj", "{22919306-9610-42D3-93EF-AC4D879495EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22919306-9610-42D3-93EF-AC4D879495EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22919306-9610-42D3-93EF-AC4D879495EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22919306-9610-42D3-93EF-AC4D879495EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22919306-9610-42D3-93EF-AC4D879495EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,5 +93,6 @@ Global
 		{FF42228E-2FCA-4AB3-A758-E619064E2CA0} = {BD66D6D3-2900-4BB4-87E4-A05D81B33CAD}
 		{6B6846E1-625D-4E8D-8103-AB8F1EBC1A18} = {BD66D6D3-2900-4BB4-87E4-A05D81B33CAD}
 		{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1} = {4F5E7A96-685C-4675-9436-A8CE0BA4530B}
+		{22919306-9610-42D3-93EF-AC4D879495EC} = {3E8CE1D2-AD55-4807-AAFF-E3462A2A9ABF}
 	EndGlobalSection
 EndGlobal
