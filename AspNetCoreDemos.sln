@@ -35,6 +35,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFrameworkCore", "EntityFrameworkCore", "{1046A331-9E45-477B-BD6C-D4C3259ED3CA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middleware", "Middleware", "{3E8CE1D2-AD55-4807-AAFF-E3462A2A9ABF}"
+	ProjectSection(SolutionItems) = preProject
+		Middleware\AspNetCoreDemos.Middleware\Readme-Middleware.txt = Middleware\AspNetCoreDemos.Middleware\Readme-Middleware.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1843CE67-917D-4347-BE2A-E901A362811E}"
 	ProjectSection(SolutionItems) = preProject

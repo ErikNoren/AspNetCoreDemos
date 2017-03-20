@@ -8,6 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
+using AspNetCoreDemos.Middleware.Simple;
+using AspNetCoreDemos.Middleware.ActionConfigured;
+
 namespace AspNetCoreDemos.Middleware
 {
     public class Startup
@@ -23,19 +26,25 @@ namespace AspNetCoreDemos.Middleware
         }
 
         public IConfigurationRoot Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
+        
+        //Build the DI Container - register anything injectable
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
             services.AddMvc();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        //Define the order of middleware that will handle incoming requests; some middleware can short-circut
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            app.UseRandomNumberReponseHeader();
+            app.UseConfigurableRandomNumberReponseHeader(options => {
+                options.ResponseHeaderName = "X-pRNG";
+                options.MinimumNumber = -5;
+                options.MaxNumber = 5;
+            });
 
             app.UseMvc();
         }
