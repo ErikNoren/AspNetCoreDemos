@@ -2,6 +2,7 @@
 ----------------------------
 --   ProjectReferencing   --  
 -- Erik Noren 13 Feb 2017 --
+-- Edited 19 Mar 2017     --
 ----------------------------
 
 Purpose: To demonstrate how to reference projects from your ASP.NET Core application.

@@ -2,6 +2,7 @@
 ----------------------------
 --     Configuration      --  
 -- Erik Noren 13 Feb 2017 --
+-- Edited 19 Mar 2017     --
 ----------------------------
 
 Purpose: To demonstrate the configuration providers and retrieving values.

@@ -1,42 +1,45 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{52DA4213-D8AF-491C-BA07-7C84C420D1A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.BasicLogging", "AspNetCoreDemos.BasicLogging\AspNetCoreDemos.BasicLogging.csproj", "{28497C27-0DAD-4F00-B344-8DC636D4A598}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.Configuration", "AspNetCoreDemos.Configuration\AspNetCoreDemos.Configuration.csproj", "{9D69E94B-3E66-4AF6-B1FA-F09AE3E9E29B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDemos.ProjectReferencing.NetCore.Data", "AspNetCoreDemos.ProjectReferencing.NetCore.Data\AspNetCoreDemos.ProjectReferencing.NetCore.Data.csproj", "{D10217FE-4A52-4581-8AB1-83E877C836A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.ProjectReferencing.NetCore.Web", "AspNetCoreDemos.ProjectReferencing.NetCore.Web\AspNetCoreDemos.ProjectReferencing.NetCore.Web.csproj", "{988CFE77-9239-4584-89E9-D5EDB7DE2866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDemos.ProjectReferencing.NetFx.Data", "AspNetCoreDemos.ProjectReferencing.NetFx.Data\AspNetCoreDemos.ProjectReferencing.NetFx.Data.csproj", "{FF42228E-2FCA-4AB3-A758-E619064E2CA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.ProjectReferencing.NetFx.Web", "AspNetCoreDemos.ProjectReferencing.NetFx.Web\AspNetCoreDemos.ProjectReferencing.NetFx.Web.csproj", "{6B6846E1-625D-4E8D-8103-AB8F1EBC1A18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreDemos.Serilog", "AspNetCoreDemos.Serilog\AspNetCoreDemos.Serilog.csproj", "{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{DCA01947-A176-4B02-B183-37618278BF30}"
 	ProjectSection(SolutionItems) = preProject
 		Readme-Configuration.txt = Readme-Configuration.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{04F453EE-25D7-47A5-AE86-EDF8A947A809}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{4F5E7A96-685C-4675-9436-A8CE0BA4530B}"
 	ProjectSection(SolutionItems) = preProject
 		Readme-Logging.txt = Readme-Logging.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFrameworkCore", "EntityFrameworkCore", "{9B8F5C01-863C-4E8F-908F-1321F69767EE}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCoreDemos.Configuration", "AspNetCoreDemos.Configuration\AspNetCoreDemos.Configuration.xproj", "{7EDB4CD2-191F-4969-838D-2F074EE87A5B}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCoreDemos.BasicLogging", "AspNetCoreDemos.BasicLogging\AspNetCoreDemos.BasicLogging.xproj", "{4B457073-089C-4B8F-96E5-399A096C4F10}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCoreDemos.Serilog", "AspNetCoreDemos.Serilog\AspNetCoreDemos.Serilog.xproj", "{0E83E60D-F8F9-4028-B5DA-5587ED8FFB3F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectReferencing", "ProjectReferencing", "{7DC89F2D-7102-4458-B3D1-72BEB15E86C9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectReferencing", "ProjectReferencing", "{BD66D6D3-2900-4BB4-87E4-A05D81B33CAD}"
 	ProjectSection(SolutionItems) = preProject
 		Readme-ProjectReferencing.txt = Readme-ProjectReferencing.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetFx", "NetFx", "{D0E9410C-898E-4108-9A7E-4A12725533A6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFrameworkCore", "EntityFrameworkCore", "{1046A331-9E45-477B-BD6C-D4C3259ED3CA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetCore", "NetCore", "{D268D359-53B4-4F25-A6D9-CF9254394301}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middleware", "Middleware", "{3E8CE1D2-AD55-4807-AAFF-E3462A2A9ABF}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCoreDemos.ProjectReferencing.NetFx.Web", "AspNetCoreDemos.ProjectReferencing.NetFx.Web\AspNetCoreDemos.ProjectReferencing.NetFx.Web.xproj", "{4E47705F-FA43-4323-A269-7E42914BC8A9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDemos.ProjectReferencing.NetFx.Data", "AspNetCoreDemos.ProjectReferencing.NetFx.Data\AspNetCoreDemos.ProjectReferencing.NetFx.Data.csproj", "{FF42228E-2FCA-4AB3-A758-E619064E2CA0}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCoreDemos.ProjectReferencing.NetCore.Web", "AspNetCoreDemos.ProjectReferencing.NetCore.Web\AspNetCoreDemos.ProjectReferencing.NetCore.Web.xproj", "{878CD12C-0B5A-4254-AB98-066D98836AC8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDemos.ProjectReferencing.NetCore.Data", "AspNetCoreDemos.ProjectReferencing.NetCore.Data\AspNetCoreDemos.ProjectReferencing.NetCore.Data.csproj", "{D10217FE-4A52-4581-8AB1-83E877C836A3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1843CE67-917D-4347-BE2A-E901A362811E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,47 +47,45 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7EDB4CD2-191F-4969-838D-2F074EE87A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7EDB4CD2-191F-4969-838D-2F074EE87A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7EDB4CD2-191F-4969-838D-2F074EE87A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7EDB4CD2-191F-4969-838D-2F074EE87A5B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B457073-089C-4B8F-96E5-399A096C4F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B457073-089C-4B8F-96E5-399A096C4F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B457073-089C-4B8F-96E5-399A096C4F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B457073-089C-4B8F-96E5-399A096C4F10}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E83E60D-F8F9-4028-B5DA-5587ED8FFB3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E83E60D-F8F9-4028-B5DA-5587ED8FFB3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E83E60D-F8F9-4028-B5DA-5587ED8FFB3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E83E60D-F8F9-4028-B5DA-5587ED8FFB3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E47705F-FA43-4323-A269-7E42914BC8A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E47705F-FA43-4323-A269-7E42914BC8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E47705F-FA43-4323-A269-7E42914BC8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E47705F-FA43-4323-A269-7E42914BC8A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF42228E-2FCA-4AB3-A758-E619064E2CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF42228E-2FCA-4AB3-A758-E619064E2CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF42228E-2FCA-4AB3-A758-E619064E2CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF42228E-2FCA-4AB3-A758-E619064E2CA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{878CD12C-0B5A-4254-AB98-066D98836AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{878CD12C-0B5A-4254-AB98-066D98836AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{878CD12C-0B5A-4254-AB98-066D98836AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{878CD12C-0B5A-4254-AB98-066D98836AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28497C27-0DAD-4F00-B344-8DC636D4A598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28497C27-0DAD-4F00-B344-8DC636D4A598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28497C27-0DAD-4F00-B344-8DC636D4A598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28497C27-0DAD-4F00-B344-8DC636D4A598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D69E94B-3E66-4AF6-B1FA-F09AE3E9E29B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D69E94B-3E66-4AF6-B1FA-F09AE3E9E29B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D69E94B-3E66-4AF6-B1FA-F09AE3E9E29B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D69E94B-3E66-4AF6-B1FA-F09AE3E9E29B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D10217FE-4A52-4581-8AB1-83E877C836A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D10217FE-4A52-4581-8AB1-83E877C836A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D10217FE-4A52-4581-8AB1-83E877C836A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D10217FE-4A52-4581-8AB1-83E877C836A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988CFE77-9239-4584-89E9-D5EDB7DE2866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988CFE77-9239-4584-89E9-D5EDB7DE2866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988CFE77-9239-4584-89E9-D5EDB7DE2866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988CFE77-9239-4584-89E9-D5EDB7DE2866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF42228E-2FCA-4AB3-A758-E619064E2CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF42228E-2FCA-4AB3-A758-E619064E2CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF42228E-2FCA-4AB3-A758-E619064E2CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF42228E-2FCA-4AB3-A758-E619064E2CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B6846E1-625D-4E8D-8103-AB8F1EBC1A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B6846E1-625D-4E8D-8103-AB8F1EBC1A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B6846E1-625D-4E8D-8103-AB8F1EBC1A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B6846E1-625D-4E8D-8103-AB8F1EBC1A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{7EDB4CD2-191F-4969-838D-2F074EE87A5B} = {52DA4213-D8AF-491C-BA07-7C84C420D1A8}
-		{4B457073-089C-4B8F-96E5-399A096C4F10} = {04F453EE-25D7-47A5-AE86-EDF8A947A809}
-		{0E83E60D-F8F9-4028-B5DA-5587ED8FFB3F} = {04F453EE-25D7-47A5-AE86-EDF8A947A809}
-		{D0E9410C-898E-4108-9A7E-4A12725533A6} = {7DC89F2D-7102-4458-B3D1-72BEB15E86C9}
-		{D268D359-53B4-4F25-A6D9-CF9254394301} = {7DC89F2D-7102-4458-B3D1-72BEB15E86C9}
-		{4E47705F-FA43-4323-A269-7E42914BC8A9} = {D0E9410C-898E-4108-9A7E-4A12725533A6}
-		{FF42228E-2FCA-4AB3-A758-E619064E2CA0} = {D0E9410C-898E-4108-9A7E-4A12725533A6}
-		{878CD12C-0B5A-4254-AB98-066D98836AC8} = {D268D359-53B4-4F25-A6D9-CF9254394301}
-		{D10217FE-4A52-4581-8AB1-83E877C836A3} = {D268D359-53B4-4F25-A6D9-CF9254394301}
+		{28497C27-0DAD-4F00-B344-8DC636D4A598} = {4F5E7A96-685C-4675-9436-A8CE0BA4530B}
+		{9D69E94B-3E66-4AF6-B1FA-F09AE3E9E29B} = {DCA01947-A176-4B02-B183-37618278BF30}
+		{D10217FE-4A52-4581-8AB1-83E877C836A3} = {BD66D6D3-2900-4BB4-87E4-A05D81B33CAD}
+		{988CFE77-9239-4584-89E9-D5EDB7DE2866} = {BD66D6D3-2900-4BB4-87E4-A05D81B33CAD}
+		{FF42228E-2FCA-4AB3-A758-E619064E2CA0} = {BD66D6D3-2900-4BB4-87E4-A05D81B33CAD}
+		{6B6846E1-625D-4E8D-8103-AB8F1EBC1A18} = {BD66D6D3-2900-4BB4-87E4-A05D81B33CAD}
+		{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1} = {4F5E7A96-685C-4675-9436-A8CE0BA4530B}
 	EndGlobalSection
 EndGlobal
