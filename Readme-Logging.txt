@@ -2,6 +2,7 @@
 ----------------------------
 --        Logging         --  
 -- Erik Noren 13 Feb 2017 --
+-- Edited 19 Mar 2017     --
 ----------------------------
 
 Purpose: Demonstrate the abstraction of the loggerFactory for use in code independent of choice of logging library.
