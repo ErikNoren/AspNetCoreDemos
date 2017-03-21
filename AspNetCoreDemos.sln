@@ -46,6 +46,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDemos.Middleware", "Middleware\AspNetCoreDemos.Middleware\AspNetCoreDemos.Middleware.csproj", "{22919306-9610-42D3-93EF-AC4D879495EC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4DCC7E7D-F92A-445E-890F-C40DDCF321B0}"
+	ProjectSection(SolutionItems) = preProject
+		Services\Readme-Services.txt = Services\Readme-Services.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreDemos.Services", "Services\AspNetCoreDemos.Services\AspNetCoreDemos.Services.csproj", "{AC5B657E-7DAD-4F8E-8C12-D63E2D558255}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,6 +91,10 @@ Global
 		{22919306-9610-42D3-93EF-AC4D879495EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22919306-9610-42D3-93EF-AC4D879495EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22919306-9610-42D3-93EF-AC4D879495EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC5B657E-7DAD-4F8E-8C12-D63E2D558255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC5B657E-7DAD-4F8E-8C12-D63E2D558255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC5B657E-7DAD-4F8E-8C12-D63E2D558255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC5B657E-7DAD-4F8E-8C12-D63E2D558255}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,5 +108,6 @@ Global
 		{6B6846E1-625D-4E8D-8103-AB8F1EBC1A18} = {BD66D6D3-2900-4BB4-87E4-A05D81B33CAD}
 		{A83D3405-A1D5-49A5-8BF6-D0C272F9F0B1} = {4F5E7A96-685C-4675-9436-A8CE0BA4530B}
 		{22919306-9610-42D3-93EF-AC4D879495EC} = {3E8CE1D2-AD55-4807-AAFF-E3462A2A9ABF}
+		{AC5B657E-7DAD-4F8E-8C12-D63E2D558255} = {4DCC7E7D-F92A-445E-890F-C40DDCF321B0}
 	EndGlobalSection
 EndGlobal
