@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace AspNetCoreDemos.Services.Controllers
 {
@@ -10,50 +11,30 @@ namespace AspNetCoreDemos.Services.Controllers
     public class ValuesController : Controller
     {
         private readonly AsyncWorkerService _workerService;
+        private readonly ILogger<ValuesController> _logger;
 
-        public ValuesController(AsyncWorkerService workerService)
+        public ValuesController(AsyncWorkerService workerService, ILogger<ValuesController> logger)
         {
             _workerService = workerService;
+            _logger = logger;
         }
 
         // GET api/values
         [HttpGet]
         public string Get()
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 1; i <= 5; i++)
             {
-                _workerService.TryQueueWork(() => {
-                    int counter = i;
-                    Task.Delay(TimeSpan.FromSeconds(counter)).Wait();
-                });
+                _workerService.TryQueueWork(state => {
+                    var log = _logger;
+                    int delay = (int)state;
+
+                    log.LogInformation($"Work item: Wait for {delay} seconds.");
+                    Task.Delay(TimeSpan.FromSeconds(delay)).Wait();
+                }, i);
             }
 
             return "Queued 5 work items. Stop the web server to see if it blocks the shutdown. (Note: only stopping Kestrel via command prompt will do a graceful shutdown. Stopping VS debugger terminates the process.";
-        }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }

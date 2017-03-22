@@ -44,11 +44,32 @@ namespace AspNetCoreDemos.Services
             Interlocked.Increment(ref _workItemQueuedCount);
         }
 
+        public void QueueWork(Action<object> workItem, object state)
+        {
+            if (workItem == null) throw new ArgumentNullException(nameof(workItem));
+
+            _workQueue.Add(() => workItem(state));
+            Interlocked.Increment(ref _workItemQueuedCount);
+        }
+
         public bool TryQueueWork(Action workItem)
         {
             try
             {
                 QueueWork(workItem);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool TryQueueWork(Action<object> workItem, object state)
+        {
+            try
+            {
+                QueueWork(workItem, state);
                 return true;
             }
             catch
