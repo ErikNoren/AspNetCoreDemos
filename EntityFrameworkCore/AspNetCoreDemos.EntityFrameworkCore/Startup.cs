@@ -29,9 +29,18 @@ namespace AspNetCoreDemos.EntityFrameworkCore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<PizzaTimeContext>(options => {
+            services.AddDbContext<PizzaTimeContext>(options =>
+            {
                 options.UseInMemoryDatabase();
             });
+
+            //services.AddDbContext<PizzaTimeContext>(options =>
+            //{
+            //    options.UseSqlServer(Configuration.GetConnectionString("LocalDb"), sqlServerOptions =>
+            //    {
+            //        sqlServerOptions.EnableRetryOnFailure();
+            //    });
+            //});
 
             services.AddScoped<PizzaTimeRepository>();
 
