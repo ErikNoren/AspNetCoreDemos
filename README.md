@@ -12,3 +12,7 @@ When looking through these samples if you encounter anything unfamiliar check ou
 They are incredible and continue to [improve with contributions](https://github.com/aspnet/Docs).
 
 To understand the demos, each solution folder has a Readme- file explaining what you should see.
+
+Update 2018-10-29: Updated package references to fix automatic GitHub security alerts but retained the 1.1 versioning for those who have not updated their tooling.
+
+*Note* This project was for a point-in-time presentation and does not reflect current guidance on proper design. Please do not use these examples for anything more than learning purposes.
